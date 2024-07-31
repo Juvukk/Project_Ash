@@ -20,6 +20,7 @@ public class ObjectPooling : MonoBehaviour
     [SerializeField] private List<GameObject> squ;
     [SerializeField] private List<GameObject> dia;
     [SerializeField] private List<GameObject> sta;
+    [SerializeField] private List<GameObject> dro;
 
     private void Awake()
     {
@@ -70,6 +71,10 @@ public class ObjectPooling : MonoBehaviour
         {
             sta.Add(tmp);
         }
+        else if (index == 5)
+        {
+            dro.Add(tmp);
+        }
     }
 
     public List<GameObject> DetermineList(int index)
@@ -98,6 +103,11 @@ public class ObjectPooling : MonoBehaviour
         {
             sta[counterLists[index]].SetActive(false);
             return sta;
+        }
+        else if (index == 5)
+        {
+            dro[counterLists[index]].SetActive(false);
+            return dro;
         }
         else
         {

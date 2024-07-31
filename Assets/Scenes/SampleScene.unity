@@ -699,6 +699,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92534743}
   m_CullTransparentMesh: 1
+--- !u!1 &97036081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97036082}
+  - component: {fileID: 97036083}
+  m_Layer: 0
+  m_Name: UnlockRecipes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &97036082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97036081}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -300.76895, y: -194.1704, z: 167.66618}
+  m_LocalScale: {x: 17.662603, y: 17.662603, z: 17.662603}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892429723}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &97036083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97036081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac81ee648e95694b887e98182fbd503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlocked: 
+  buttons:
+  - {fileID: 252024353}
+  - {fileID: 252024353}
+  - {fileID: 252024353}
+  - {fileID: 159411213}
+  - {fileID: 1664289906}
+  - {fileID: 661309063}
+  - {fileID: 849833209}
+  - {fileID: 550839968}
+  - {fileID: 565177384}
+  - {fileID: 762037448}
+  - {fileID: 344515374}
+  - {fileID: 2083256715}
+  - {fileID: 320062909}
+  - {fileID: 1039926539}
+  - {fileID: 2051674579}
+  - {fileID: 596610853}
 --- !u!1 &136981343
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,12 +842,12 @@ GameObject:
   - component: {fileID: 159411216}
   - component: {fileID: 159411215}
   m_Layer: 5
-  m_Name: Squ (13)
+  m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &159411214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -801,11 +863,11 @@ RectTransform:
   - {fileID: 1672016191}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 343, y: 297}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -541.7251}
+  m_SizeDelta: {x: 419, y: 419}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &159411215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,7 +919,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -882,7 +944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1dd3f3339beaec44583b506a0fe8003a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1381,12 +1443,12 @@ GameObject:
   - component: {fileID: 320062912}
   - component: {fileID: 320062911}
   m_Layer: 5
-  m_Name: Squ (12)
+  m_Name: Drop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &320062910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1402,9 +1464,9 @@ RectTransform:
   - {fileID: 1115752922}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1566.0254}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320062911
@@ -1483,7 +1545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48966d3f00b81b54ea9518cc9a444f81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1532,7 +1594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objCount: 1
   objCounter: 0
-  spawnPos: {fileID: 0}
+  spawnPos: {fileID: 21968697}
 --- !u!4 &336090627
 Transform:
   m_ObjectHideFlags: 0
@@ -1562,12 +1624,12 @@ GameObject:
   - component: {fileID: 344515377}
   - component: {fileID: 344515376}
   m_Layer: 5
-  m_Name: Squ (5)
+  m_Name: Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &344515375
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1583,9 +1645,9 @@ RectTransform:
   - {fileID: 635392198}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1338.1252}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344515376
@@ -1664,7 +1726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52741b4c1f48a4b4290d2e9781c18892, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2343,12 +2405,12 @@ GameObject:
   - component: {fileID: 550839971}
   - component: {fileID: 550839970}
   m_Layer: 5
-  m_Name: Wall
+  m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &550839969
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2364,10 +2426,10 @@ RectTransform:
   - {fileID: 1407972754}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 343, y: 297}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 92.22502, y: -996.4501}
+  m_SizeDelta: {x: 527, y: 296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550839970
 MonoBehaviour:
@@ -2445,7 +2507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76f545810b27e984eb65cc69056c5b91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2476,12 +2538,12 @@ GameObject:
   - component: {fileID: 565177387}
   - component: {fileID: 565177386}
   m_Layer: 5
-  m_Name: Squ (3)
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &565177385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2497,9 +2559,9 @@ RectTransform:
   - {fileID: 1919803609}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1110.2251}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565177386
@@ -2578,7 +2640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 394866ac664a8a24294be55d16a54a14, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2714,12 +2776,12 @@ GameObject:
   - component: {fileID: 596610856}
   - component: {fileID: 596610855}
   m_Layer: 5
-  m_Name: Squ (7)
+  m_Name: Chain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &596610854
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2735,9 +2797,9 @@ RectTransform:
   - {fileID: 1377842457}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1907.8756}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596610855
@@ -2816,7 +2878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 099b0f25a4b6a354e813297e542f9fda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3063,12 +3125,12 @@ GameObject:
   - component: {fileID: 661309066}
   - component: {fileID: 661309065}
   m_Layer: 5
-  m_Name: Squ (9)
+  m_Name: Energy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &661309064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3084,10 +3146,10 @@ RectTransform:
   - {fileID: 2061717646}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 343, y: 297}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 43.22501, y: -689.27515}
+  m_SizeDelta: {x: 247, y: 367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661309065
 MonoBehaviour:
@@ -3165,7 +3227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97a8fc8aa3407d649af280ee960d8c2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3231,12 +3293,12 @@ GameObject:
   - component: {fileID: 762037451}
   - component: {fileID: 762037450}
   m_Layer: 5
-  m_Name: Squ (4)
+  m_Name: Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762037449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3252,9 +3314,9 @@ RectTransform:
   - {fileID: 237998888}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1224.1752}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762037450
@@ -3333,7 +3395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f6d55363ebcecb45b9fa0032f072198, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3467,12 +3529,12 @@ GameObject:
   - component: {fileID: 849833212}
   - component: {fileID: 849833211}
   m_Layer: 5
-  m_Name: Squ (8)
+  m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &849833210
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3488,10 +3550,10 @@ RectTransform:
   - {fileID: 415838907}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 343, y: 297}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 55.825012, y: -849.0751}
+  m_SizeDelta: {x: 319, y: 489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849833211
 MonoBehaviour:
@@ -3569,7 +3631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03db2bbce3660d449a0bf0af67b53176, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3683,6 +3745,7 @@ RectTransform:
   m_Children:
   - {fileID: 11776653}
   - {fileID: 1764922170}
+  - {fileID: 97036082}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4201,12 +4264,12 @@ GameObject:
   - component: {fileID: 1039926542}
   - component: {fileID: 1039926541}
   m_Layer: 5
-  m_Name: Squ (11)
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1039926540
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4222,9 +4285,9 @@ RectTransform:
   - {fileID: 924252129}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1679.9755}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039926541
@@ -4303,7 +4366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da19e4cd6434ebe4abfff19996e0dac4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5046,19 +5109,19 @@ RectTransform:
   - {fileID: 252024354}
   - {fileID: 1469168453}
   - {fileID: 1197483843}
+  - {fileID: 159411214}
   - {fileID: 1664289907}
+  - {fileID: 661309064}
+  - {fileID: 849833210}
   - {fileID: 550839969}
   - {fileID: 565177385}
   - {fileID: 762037449}
   - {fileID: 344515375}
   - {fileID: 2083256716}
-  - {fileID: 596610854}
-  - {fileID: 849833210}
-  - {fileID: 661309064}
-  - {fileID: 2051674580}
-  - {fileID: 1039926540}
   - {fileID: 320062910}
-  - {fileID: 159411214}
+  - {fileID: 1039926540}
+  - {fileID: 2051674580}
+  - {fileID: 596610854}
   m_Father: {fileID: 454514198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5844,12 +5907,12 @@ GameObject:
   - component: {fileID: 1664289909}
   - component: {fileID: 1664289908}
   m_Layer: 5
-  m_Name: Brick
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1664289907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5865,10 +5928,10 @@ RectTransform:
   - {fileID: 1034123587}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 343, y: 297}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 61.250015, y: -400.1251}
+  m_SizeDelta: {x: 350, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664289908
 MonoBehaviour:
@@ -5946,7 +6009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27342ba7182c9fb438e5cc870e1e5b13, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6622,12 +6685,12 @@ GameObject:
   - component: {fileID: 2051674582}
   - component: {fileID: 2051674581}
   m_Layer: 5
-  m_Name: Squ (10)
+  m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2051674580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6643,9 +6706,9 @@ RectTransform:
   - {fileID: 2004425901}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1793.9255}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051674581
@@ -6724,7 +6787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76c7ca12caf1a7442a357651ea0301ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6889,12 +6952,12 @@ GameObject:
   - component: {fileID: 2083256718}
   - component: {fileID: 2083256717}
   m_Layer: 5
-  m_Name: Squ (6)
+  m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2083256716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6910,9 +6973,9 @@ RectTransform:
   - {fileID: 92534744}
   m_Father: {fileID: 1258172089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.025013, y: -1452.0753}
   m_SizeDelta: {x: 343, y: 297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083256717
@@ -6991,7 +7054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 796b0cb3af1a5694e9ebda0c1ddc28a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 027c18a8bc1b01a4e86574b571f0148f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

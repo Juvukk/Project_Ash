@@ -16,8 +16,9 @@ public class RecipeList : MonoBehaviour
         {
             for (int i = 0; i < recipes.Length; i++)
             {
-                if (recipes[i] == recipe)
+                if (recipes[i].Contains(recipe))
                 {
+                    Debug.Log("should spawn");
                     SpawnObject(i);
                 }
             }
@@ -31,5 +32,6 @@ public class RecipeList : MonoBehaviour
     private void SpawnObject(int index)
     {
         spawn.SpawnObjects(index);
+        EventManager.recipeUnlock(index);
     }
 }
