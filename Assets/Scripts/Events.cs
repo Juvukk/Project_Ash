@@ -18,7 +18,8 @@ public class Events : MonoBehaviour
     {
         if (other != null)
         {
-            if (other.GetComponent<Ingredient>().ingredientCode == correctIngredientCode)
+            Debug.Log(other.name);
+            if (other.CompareTag("Object") && other.GetComponent<Ingredient>().ingredientCode == correctIngredientCode)
             {
                 Event.Invoke();
             }

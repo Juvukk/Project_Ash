@@ -15,11 +15,11 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObjects(int index)
     {
-        objCounter++; // this counter needs to be for each object not total.
-        if (objCounter == 4)
-        {
-            objCounter = 0;
-        }
+        //objCounter++; // this counter needs to be for each object not total.
+        //if (objCounter == 4)
+        //{
+        //    objCounter = 0;
+        //}
         GameObject obj = ObjectPooling.sharedInstance.SpawnPooledObject(objCount, index);
         if (!obj.activeInHierarchy)
         {

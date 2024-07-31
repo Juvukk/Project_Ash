@@ -7,18 +7,18 @@ using static UnityEditor.Progress;
 public class RecipeList : MonoBehaviour
 {
     public string[] recipes;
-
+    public string[] Altrecipes;
     public Spawner spawn;
 
     public void CheckRecipe(string recipe)
     {
-        if (recipes.Contains(recipe))
+        if (recipes.Contains(recipe) || Altrecipes.Contains(recipe))
         {
             for (int i = 0; i < recipes.Length; i++)
             {
-                if (recipes[i].Contains(recipe))
+                if (recipes[i] == recipe || Altrecipes[i] == recipe)
                 {
-                    Debug.Log("should spawn");
+                    Debug.Log(i);
                     SpawnObject(i);
                 }
             }

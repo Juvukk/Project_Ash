@@ -12,4 +12,8 @@ public class EventManager : MonoBehaviour
     public delegate void onRecipeUnlock(int index);
 
     public static onRecipeUnlock recipeUnlock;
+
+    public delegate void clearItemCount(int index);
+
+    public static clearItemCount clearcount;
 }

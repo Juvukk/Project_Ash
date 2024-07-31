@@ -16,6 +16,6 @@ public class Pop : MonoBehaviour
 
     private void OnDisable()
     {
-        rb.velocity = Vector3.zero;
+        // rb.velocity = Vector3.zero;
     }
 }

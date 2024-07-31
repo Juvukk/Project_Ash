@@ -33,5 +33,9 @@ public class Raycast : MonoBehaviour
             Debug.Log(hit.transform.name);
             hitobject = hit.transform.gameObject;
         }
+        else
+        {
+            hitobject = null;
+        }
     }
 }

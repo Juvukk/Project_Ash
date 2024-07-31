@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour
 {
-    [SerializeField] private bool isGrabbed;
+    [SerializeField] public bool isGrabbed;
     [SerializeField] private Vector3 mousePos;
     [SerializeField] private float interpolation;
     [SerializeField] private Rigidbody rb;
@@ -16,6 +16,11 @@ public class Grab : MonoBehaviour
     private void OnEnable()
     {
         EventManager.onraycast += CheckTransform;
+        isGrabbed = false;
+        if (rb != null)
+        {
+            rb.useGravity = true;
+        }
     }
 
     private void OnDisable()

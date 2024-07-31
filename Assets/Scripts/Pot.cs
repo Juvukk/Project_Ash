@@ -67,6 +67,8 @@ public class Pot : MonoBehaviour
                 SendMixed();
             }
 
+            other.GetComponent<Grab>().isGrabbed = false;
+            other.gameObject.transform.position = transform.position;
             other.gameObject.SetActive(false);
         }
     }
