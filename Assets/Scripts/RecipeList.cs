@@ -9,6 +9,8 @@ public class RecipeList : MonoBehaviour
     public string[] recipes;
     public string[] Altrecipes;
     public Spawner spawn;
+    [SerializeField] private GameObject ps;
+    [SerializeField] private GameObject smoke;
 
     public void CheckRecipe(string recipe)
     {
@@ -25,8 +27,10 @@ public class RecipeList : MonoBehaviour
         }
         else
         {
-            Debug.Log("reject");
+            ps.SetActive(true);
         }
+
+        smoke.SetActive(true);
     }
 
     private void SpawnObject(int index)
